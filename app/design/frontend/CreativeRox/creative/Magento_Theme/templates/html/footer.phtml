@@ -1,0 +1,36 @@
+<?php
+/**
+ * Copyright © 2015 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+// @codingStandardsIgnoreFile
+?>
+<div class="footer-container">
+    <div class="footer">
+    	
+    <div class="column4">    
+    	<?php echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('customer_service')->toHtml();?>
+		</div>
+       
+    <div class="column4">
+    	<?php echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('about_us')->toHtml();?>
+		</div>
+      
+    <div class="column4">
+    	<?php echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('information')->toHtml();?>
+		</div>
+       
+    <div class="column4">
+			<h4>Follow Us</h4>
+				<?php echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('follow_us')->toHtml();?>
+			<br>
+			<br>
+			<h4>Secure Payments</h4>
+				<img class="paymentmethod" src="<?php echo $block->getViewFileUrl('images/Secured-by-Sage-Pay.jpg'); ?>" alt="Secured by Sagepay.jpg" />
+		</div>
+      
+  <?php echo $block->getChildHtml() ?>
+        
+	</div>
+  
+</div>
